@@ -1,0 +1,102 @@
+.sep_topic_title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.sep_topic_title.sep_s1 {
+    font-size: 1.6rem;
+}
+
+.sep_topic_title.sep_s2 {
+    font-size: 1.4rem;
+}
+
+.sep_topic_title.sep_s3 {
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+body.sep:not(h1),
+div.sep:not(h1) {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: "Arial";
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: #E2FBFF;
+}
+
+.formula,
+.sep_formula {
+    display: inline;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.sep_content {
+    z-index: 1;
+    background-color: #F2FEFF;
+    border: 1px solid #aaa;
+    padding: 1px;
+    font-size: 1em;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    float: left;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    overflow: auto;
+}
+
+img.sep.sep_middle {
+    display: block;
+    margin: 0 auto;
+}
+
+.sep_content h3 {
+    cursor: default;
+    margin: 0px;
+    text-align: left;
+}
+
+.sep_content ul {
+    padding: 0px;
+    margin: 0px 0px 0px 5px;
+    list-style-type: none;
+}
+
+.sep_content li {
+    border-bottom: 1px solid black;
+}
+
+.sep_content a {
+    color: blue;
+    text-decoration: none;
+}
+
+a.sep {
+    color: blue;
+    text-decoration: none;
+}
+
+.sep_clear {
+    clear: both;
+}
+
+.sep_middle {
+    margin: 0 auto;
+    float: none;
+}
+
+@media screen and (max-width: 500px) {
+    img.sep {
+        width: 95%;
+    }
+}

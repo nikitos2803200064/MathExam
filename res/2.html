@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Билет 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/sep.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/sep.js"></script>
+    <script type="text/javascript" src="../MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body class="sep">
+    <div class="sep_topic" id="sep_def" data-sep-title="Определение предела функции в точке">
+        <div class="sep_topic" id="sep_def_geine" data-sep-title="Определение 1 (на «языке последовательностей», или по Гейне)">
+            <div class="sep_definition">
+                Число $А$ называется пределом функции $y=f(x)$ в топке $x_0$ (или при $x\rightarrow x_0$), если для любой последовательности допустимых значений аргумента $x_n$, $n\in N$ ($x_n\neq x_0$), сходящейся к $x_0$ последовательность соответствующих значений функции $f(x_n)$, $n \in N$, сходится к числу $А$ (то есть $\lim_{n\rightarrow\infty}f(x_n)=A$).
+            </div>
+            В этом случае пишут $\lim_{x\rightarrow x_0}f(x)=A$ или $f(x)\rightarrow A$ при $x\rightarrow x_0$.
+            <br> Геометрический смысл предела функции: $\lim_{x\rightarrow x_0}f(x)=A$ означает, что для всех точек $х$, достаточно близких к точке $х_о$, соответствующие значения функции как угодно мало отличаются от числа $А$.
+        </div>
+        <div class="sep_topic" id="sep_def_koshi" data-sep-title="Определение 2 (определение на языке $\varepsilon - \delta$, или по Коши)">
+            <div class="sep_definition">
+            Число $А$ называется пределом функции в точке $х_о$ (или при $x\rightarrow x_0$), если для любого положительного $\varepsilon$ найдется такое положительное число $\delta$, что для всех $x\neq x_0$, удовлетворяющих неравенству $\vert x-x_0\vert<\delta$, выполняется неравенство $\vert f(x)-A\vert<\varepsilon$.
+            $$\lim_{x\rightarrow x_0}f(x)=A\Leftrightarrow(\forall\varepsilon>0\;\exists\delta>0\;\forall x:\;\vert x-x_0\vert<\delta,\;x\neq x_0\;(или\;0<\vert x-x_0\vert<\delta)\Rightarrow\vert f(x)-A\vert<\varepsilon)$$
+            </div>
+        </div>
+        <div class="sep_topic" id="sep_def_ravnos" data-sep-title="Эквивалентность определений по Гейне и Коши"></div>
+    </div>
+</body>
+
+</html>
