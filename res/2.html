@@ -15,7 +15,7 @@
     <div class="sep_topic" id="sep_def" data-sep-title="Определение предела функции в точке">
         <div class="sep_topic" id="sep_def_geine" data-sep-title="Определение 1 (на «языке последовательностей», или по Гейне)">
             <div class="sep_definition">
-                Число $А$ называется пределом функции $y=f(x)$ в топке $x_0$ (или при $x\rightarrow x_0$), если для любой последовательности допустимых значений аргумента $x_n$, $n\in N$ ($x_n\neq x_0$), сходящейся к $x_0$ последовательность соответствующих значений функции $f(x_n)$, $n \in N$, сходится к числу $А$ (то есть $\lim_{n\rightarrow\infty}f(x_n)=A$).
+                Число $А$ называется пределом функции $y=f(x)$ в точке $x_0$ (или при $x\rightarrow x_0$), если для любой последовательности допустимых значений аргумента $x_n$, $n\in N$ ($x_n\neq x_0$), сходящейся к $x_0$ последовательность соответствующих значений функции $f(x_n)$, $n \in N$, сходится к числу $А$ (то есть $\lim_{n\rightarrow\infty}f(x_n)=A$).
             </div>
             В этом случае пишут $\lim_{x\rightarrow x_0}f(x)=A$ или $f(x)\rightarrow A$ при $x\rightarrow x_0$.
             <br> Геометрический смысл предела функции: $\lim_{x\rightarrow x_0}f(x)=A$ означает, что для всех точек $х$, достаточно близких к точке $х_о$, соответствующие значения функции как угодно мало отличаются от числа $А$.
@@ -26,7 +26,11 @@
             $$\lim_{x\rightarrow x_0}f(x)=A\Leftrightarrow(\forall\varepsilon>0\;\exists\delta>0\;\forall x:\;\vert x-x_0\vert<\delta,\;x\neq x_0\;(или\;0<\vert x-x_0\vert<\delta)\Rightarrow\vert f(x)-A\vert<\varepsilon)$$
             </div>
         </div>
-        <div class="sep_topic" id="sep_def_ravnos" data-sep-title="Эквивалентность определений по Гейне и Коши"></div>
+        <div class="sep_topic" id="sep_def_ravnos" data-sep-title="Эквивалентность определений по Гейне и Коши">
+            Пусть число $A$ является пределом функции $f(x)$ в точке $x_0$ по Коши. Выберем произвольную подходящую последовательность $x_{n}$ , $n \in N$, то есть такую, для которой $\lim\limits_{n\rightarrow \infty } x_{n} = x_0$. Покажем, что $A$ является пределом по Гейне. <br>
+            Зададим произвольное $\varepsilon > 0$ и укажем для него такое $\delta > 0$, что для всех $x$ из условия $0<\vert x-a\vert<\delta$ следует неравенство $\vert f(x)-A\vert<\varepsilon$. В силу того, что $\lim\limits_{n\rightarrow \infty } x_{n} = x_0$, для $\delta > 0$ найдётся такой номер $N_0\in N$, что $\forall n\geq N_0$ будет выполняться неравенство $\vert f(x_n)-A\vert<\varepsilon$, то есть $\lim\limits_{n\rightarrow \infty } f(x_{n}) = A$. <br>
+            Докажем теперь обратное утверждение: предположим, что $\lim\limits_{x\rightarrow x_0 } f(x) = A$ по Гейне, и покажем, что число $A$ является пределом функции $f(x)$ в точке $x_0$ по Коши. Предположим, что это неверно, то есть: $\exists\varepsilon_0>0\;\forall\delta>0:\exists x_\delta:0<\vert x_\delta-a\vert<\delta\Rightarrow\vert f(x_\delta)-A\vert\geq\varepsilon$. В качестве $\delta$ рассмотрим $\delta = \frac{1}{n}$, а соответствующие значения $x_{\delta }$ будем обозначать $x_{n}$. Тогда при любом $n\in N$ выполняются условия $|x_{n}-x_0|<\frac{1}{n}$ и $|f(x_{n})- A | \geq \varepsilon$. Отсюда следует, что последовательность $x_{n}$ является подходящей, но число A не является пределом функции $f(x)$ в точке $x_0$. Получили противоречие.
+        </div>
     </div>
 </body>
 

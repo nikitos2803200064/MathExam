@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Билет 5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/sep.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/sep.js"></script>
+    <script type="text/javascript" src="../MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body class="sep">
+    <div class="sep_topic" id="sep_qwer" data-sep-title="Необходимое и достаточное условие существование предела в точке">
+        Из определения предела функции следует, что если существует $\lim_{x\rightarrow x_0}f(x)=A$, то существуют и оба односторонних предела, причем $$\lim_{x\rightarrow x_0-0}f(x)=\lim_{x\rightarrow x_0+0}f(x)=\lim_{x\rightarrow x_0}f(x)$$ Верно и обратное: если существуют $\lim_{x\rightarrow x_0-0}f(x)$ и $\lim_{x\rightarrow x_0+0}f(x)$ и они равны, то существует предел $\lim_{x\rightarrow x_0}f(x)$. Справедлива следующая теорема.
+        <div class="sep_law" data-name="Необходимое и достаточное условие существование предела в точке">
+            Для существования предела функции $y=f(x)$ в точке $x_0$ необходимо и достаточно существование в этой точке пределов справа и слева и выполнение равенства $$\lim_{x\rightarrow x_0-0}f(x)=\lim_{x\rightarrow x_0+0}f(x)=\lim_{x\rightarrow x_0}f(x)$$
+        </div>
+        Если односторонние пределы различны или хотя бы один из них не существует или равен бесконечности, то не существует и предела функции в точке $x=x_0$.
+    </div>
+</body>
+
+</html>
