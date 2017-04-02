@@ -10,8 +10,20 @@
     <script type="text/javascript" src="../js/sep.js"></script>
     <script type="text/javascript" src="../MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
+
 <body class="sep">
-	
+    <div class="sep_law" data-name="Теорема о предельном переходе в неравенстве">
+        Если в некоторой окрестности точки $x_0$ выполняется неравество $f(x)\leq g(x)$ и существуют конечные пределы $\lim_{x\rightarrow x_0}f(x)=A$ и $\lim_{x\rightarrow x_0}g(x)=B$, то $A\leq B$.
+    </div>
+    <b>Доказательство</b>
+    Пусть $X$ &mdash; общя область определения функций $f(x)$ и $g(x)$. Тогда по определению предела функции <br>
+    $$\lim_{x\rightarrow x_0}f(x)=A\Leftrightarrow(\forall\varepsilon>0\;\exists\delta>0\;\forall x:\;\vert x-x_0\vert<\delta,\;x\neq x_0\Rightarrow\vert f(x)-A\vert<\varepsilon)$$
+    $$\lim_{x\rightarrow x_0}g(x)=B\Leftrightarrow(\forall\varepsilon>0\;\exists\delta>0\;\forall x:\;\vert x-x_0\vert<\delta,\;x\neq x_0\Rightarrow\vert g(x)-B\vert<\varepsilon)$$
+    Оба равенства должны выполняться одновременно, то есть 
+    $$A-\varepsilon&lt;f(x)&lt;A+\varepsilon,\;B-\varepsilon&lt;g(x)&lt;B+\varepsilon$$
+    Выберем $\varepsilon=\frac{A-B}2$, предположив противное, то есть пусть $A>B$. Тогда
+    $$\left\{\begin{array}{l}A-\frac{A-B}2&lt;f(x)&lt;A+\frac{A-B}2\\B-\frac{A-B}2&lt;g(x)&lt;B+\frac{A-B}2\end{array}\right.\Rightarrow\left\{\begin{array}{l}\frac{A+B}2&lt;f(x)<\frac{3A-B}2\\\frac{3B-A}2&lt;g(x)<\frac{A+B}2\end{array}\right.\Rightarrow g(x)<\frac{A+B}2&lt;f(x)$$
+    Из последнего неравенства следует, что $g(x)&lt;f(x)$, что противоречит условия теоремы. Следовательно, $A\leq B$
 </body>
 
 </html>

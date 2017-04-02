@@ -10,12 +10,20 @@
     <script type="text/javascript" src="../js/sep.js"></script>
     <script type="text/javascript" src="../MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
+
 <body class="sep">
-	<div class="sep_topic" id="sep_deistv" data-sep-title="Теоремы об арифметических действиях над пределами">
-		<div class="sep_topic" id="sep_summ">
-			
-		</div>
-	</div>
+    <div class="sep_topic" id="sep_deistv" data-sep-title="Арифметические операции над функциями, имеющими предел">
+        <div class="sep_law">Пусть две функции $f(x)$ и $g(x)$ заданы на одном и том же множестве $X$ и имеют в точке $a$ пределы, равные $b$ и $c$. Тогда
+        $$\lim_{x\rightarrow x_0}(f(x)\pm g(x))=\lim_{x\rightarrow x_0}f(x)\pm\lim_{x\rightarrow x_0}g(x)=b\pm c$$
+        $$\lim_{x\rightarrow x_0}(f(x)\times g(x))=\lim_{x\rightarrow x_0}f(x)\times\lim_{x\rightarrow x_0}g(x)=b\times c$$
+        $$\lim_{x\rightarrow x_0}(\frac{f(x)}{g(x)})=\frac{\lim_{x\rightarrow x_0}f(x)}{\lim_{x\rightarrow x_0}g(x)}=\frac bc,\;с\neq0$$
+        </div>
+        <b>Доказательство</b>
+        Пусть $\{x_n\}\;(x_n\neq a)$ &mdash; произвольная, сходящаяся к $а$ последовательность значений аргумента функций $f(x)$ и $g(x)$. Соответствующие последовательности $\{f(x_n)\}$ и $\{g(x_n)\}$ значений этих функций имеют пределы $b$ и $c$. Но тогда, в силу теорем об арифметическими действиями над пределами последовательностей, последовательности $\{f(x_n)\pm g(x_n)\}$, $\{f(x_n)\times g(x_n)\}$ и $\left\{\frac{f(x_n)}{g(x_n)}\right\}$ при $c\neq0$ имеют пределы, соответственно равные $b\pm c$, $b\times c$ и $\frac{b}{c}$. Согласно определению предела функции по Гейне, это означает, что:
+        $$\lim_{x\rightarrow x_0}(f(x)\pm g(x))=\lim_{x\rightarrow x_0}f(x)\pm\lim_{x\rightarrow x_0}g(x)=b\pm c$$
+        $$\lim_{x\rightarrow x_0}(f(x)\times g(x))=\lim_{x\rightarrow x_0}f(x)\times\lim_{x\rightarrow x_0}g(x)=b\times c$$
+        $$\lim_{x\rightarrow x_0}(\frac{f(x)}{g(x)})=\frac{\lim_{x\rightarrow x_0}f(x)}{\lim_{x\rightarrow x_0}g(x)}=\frac bc,\;с\neq0$$
+    </div>
 </body>
 
 </html>
